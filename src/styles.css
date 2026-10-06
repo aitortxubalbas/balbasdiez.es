@@ -10,6 +10,18 @@ p {
     color: white;
 }
 .imagen1 {
-    width: 300px;
-    height: auto;
+    width: auto;
+    height: 400px;
+}
+.imagen2 {
+    width: auto;
+    height: 400px;
+}
+.imagen3 {
+    width: auto;
+    height: 400px;
+}
+.imagen4 {
+    width: auto;
+    height: 400px;
 }
