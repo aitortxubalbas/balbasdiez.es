@@ -1,27 +1,73 @@
 body{
     background-color: rgb(0, 0, 0);
 }
+
 h1 {
+    text-align: center;
     font-size: 40px;
     color: white;
 }
+
 p {
+    text-align: center;
     font-size: 16px;
     color: white;
 }
+
 .imagen1 {
     width: auto;
-    height: 400px;
+    height: 50px;
+    display: block;
 }
-.imagen2 {
-    width: auto;
-    height: 400px;
+
+.btn {
+    /* Tamaño y forma */
+    padding: 18px 30px;
+    border-radius: 30px; /* Bordes completamente redondeados */
+    border: 1.5px solid #2b5b84; /* Borde azul suave */
+
+  /* Tipografía y cursor */
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #1a365d;
+    cursor: pointer;
+    outline: none;
+
+  /* Fondo degradado azul claro inicial */
+    background: linear-gradient(180deg, #dcebfa 0%, #5994d3 100%);
+
+  /* Transición suave para el efecto de iluminación */
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-.imagen3 {
-    width: auto;
-    height: 400px;
+.btn:hover {
+    background: linear-gradient(180deg, #ffffff 0%, #d4e7fd 100%);
+
+    border-color: #3b82f6;
+    box-shadow: 0 0 15px rgba(147, 197, 253, 0.8), 0 4px 10px rgba(0, 0, 0, 0.15);
+    text-decoration: none;
+
+
+    transform: translateY(-1px);
 }
-.imagen4 {
-    width: auto;
-    height: 400px;
+
+/* Efecto al hacer clic */
+.btn:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.contenedor {
+    display: flex;
+    flex-direction: column; /* Coloca los elementos en columna */
+    gap: 20px;              /* Separación entre cada caja */
+}
+.caja1, .caja2 {
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
