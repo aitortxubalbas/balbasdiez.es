@@ -21,12 +21,11 @@ p {
 }
 
 .btn {
-    /* Tamaño y forma */
     padding: 18px 30px;
-    border-radius: 30px; /* Bordes completamente redondeados */
-    border: 1.5px solid #2b5b84; /* Borde azul suave */
+    border-radius: 30px;
+    border: 1.5px solid #2b5b84;
 
-  /* Tipografía y cursor */
+
     text-decoration: none;
     font-size: 16px;
     font-weight: bold;
@@ -34,10 +33,9 @@ p {
     cursor: pointer;
     outline: none;
 
-  /* Fondo degradado azul claro inicial */
+
     background: linear-gradient(180deg, #dcebfa 0%, #5994d3 100%);
 
-  /* Transición suave para el efecto de iluminación */
     transition: all 0.3s ease;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -57,12 +55,21 @@ p {
     transform: translateY(1px);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-.contenedor {
+.fila {
     display: flex;
-    flex-direction: column; /* Coloca los elementos en columna */
-    gap: 20px;              /* Separación entre cada caja */
+    flex-direction: row;
+    gap: 20px;
+    text-align: center;
+    justify-content: center;
 }
-.caja1, .caja2 {
+.columna {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    justify-content: center;
+}
+.caja1{
     padding: 10px;
     border-radius: 10px;
     text-align: center;
